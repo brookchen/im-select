@@ -14,6 +14,7 @@ The current configuration is as follows:
 -t=任务栏: the tool uses this parameter to find the taskbar. For non-Simplified Chinese systems, it can be set to the name of the corresponding language.
 -i=托盘输入指示器\s+(\w+): this regular expression is used to obtain the current input method status. Other input methods can try to modify this regular expression to adapt.
 -k=shift: this parameter sets the shortcut key for switching input methods. Other input methods or using other shortcut keys can try to modify this parameter to adapt, such as -k=ctrl+space.
+-l=英语模式,中文模式: After setting this parameter, when returning to the input method mode, its index number in the input method list will be printed; when this parameter is not set, the Chinese characters in the input method mode will be returned directly. In some environments, such as the vim plug-in of vscode, the Chinese character output may become garbled. The purpose of this parameter is to solve this problem.
 
 The -t and -i parameters can be obtained using the [Accessibility Insights](https://accessibilityinsights.io/docs/windows/overview/) .
 
